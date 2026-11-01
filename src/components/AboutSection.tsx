@@ -6,78 +6,19 @@ export function AboutSection() {
     <section id="about-tce" className="py-20 sm:py-24 bg-[oklch(0.965_0.009_92)] scroll-mt-20">
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Left Column: Clean Texas Silhouette with Brookeland Marker */}
-          <div className="lg:col-span-6 bg-white border border-[oklch(0.86_0.012_90)] p-6 sm:p-10 rounded-[2px] shadow-2xs">
-            <div className="aspect-[4/3] w-full flex items-center justify-center relative">
-              <svg
-                viewBox="0 0 500 450"
-                className="w-full h-full max-h-[380px]"
-                aria-label="Stylized map of Texas showing Brookeland in East Texas"
-                role="img"
-              >
-                {/* Clean, simplified geographic polygon of Texas */}
-                <polygon
-                  points="
-                    130,40 230,40 230,130 330,130 380,180 430,220 440,290 
-                    380,380 340,430 290,410 240,360 210,310 160,310 100,270 
-                    30,270 50,170 130,170
-                  "
-                  fill="#1c2824"
-                  stroke="#2d3c36"
-                  strokeWidth="2"
-                />
-
-                {/* East Texas Region subtle indicator */}
-                <circle cx="390" cy="245" r="45" fill="#f47626" fillOpacity="0.12" />
-
-                {/* Brookeland marker (East Texas, near Jasper/Lake Sam Rayburn) */}
-                <g id="brookeland-pin" transform="translate(390, 245)">
-                  {/* Concentric marker rings */}
-                  <circle
-                    cx="0"
-                    cy="0"
-                    r="14"
-                    fill="none"
-                    stroke="#f47626"
-                    strokeWidth="2"
-                    strokeOpacity="0.6"
-                  />
-                  <circle cx="0" cy="0" r="6" fill="#f47626" />
-
-                  {/* Leader line to label */}
-                  <line x1="-14" y1="0" x2="-110" y2="0" stroke="#f47626" strokeWidth="1.5" />
-                  <circle cx="-110" cy="0" r="2.5" fill="#f47626" />
-
-                  {/* Brookeland label text */}
-                  <text
-                    x="-120"
-                    y="4"
-                    fill="#18221f"
-                    fontSize="13"
-                    fontFamily="Fira Sans, monospace"
-                    fontWeight="800"
-                    letterSpacing="0.12em"
-                    textAnchor="end"
-                  >
-                    BROOKELAND
-                  </text>
-                </g>
-
-                {/* Caption in bottom corner */}
-                <text
-                  x="20"
-                  y="435"
-                  fill="#546159"
-                  fontSize="11"
-                  fontFamily="Fira Sans, monospace"
-                  fontWeight="700"
-                  letterSpacing="0.18em"
-                >
-                  EAST TEXAS ROOTS. TEXAS PROJECTS.
-                </text>
-              </svg>
+          {/* Left Column: Texas Map Graphic */}
+          <div className="lg:col-span-6 bg-white border border-[oklch(0.86_0.012_90)] p-4 sm:p-6 rounded-[2px] shadow-2xs">
+            <div className="aspect-square w-full max-w-[480px] mx-auto overflow-hidden bg-[#f6f4ed] rounded-[2px]">
+              <img
+                src="https://vibe.filesafe.space/1793575584947955523/attachments/d2c144cb-cb4c-48fc-a5ca-3f07b4935eee.png"
+                alt="Map of Texas highlighting Brookeland in East Texas with text: East Texas Roots. Texas Projects."
+                className="w-full h-full object-contain"
+                width={800}
+                height={800}
+                loading="lazy"
+              />
             </div>
-            <p className="mt-4 text-center text-xs font-mono text-[oklch(0.46_0.02_165)]">
+            <p className="mt-3 text-center text-xs font-mono text-[oklch(0.46_0.02_165)]">
               Conceptual geographic illustration. Not a precise coverage boundary or street
               navigation map.
             </p>
